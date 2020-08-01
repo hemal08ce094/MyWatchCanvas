@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		078C827C24D556AA000B8E39 /* MyWatchCanvas WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 078C827B24D556AA000B8E39 /* MyWatchCanvas WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		078C827C24D556AA000B8E39 /* Sketch My Wrist.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 078C827B24D556AA000B8E39 /* Sketch My Wrist.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		078C828224D556AA000B8E39 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 078C828024D556AA000B8E39 /* Interface.storyboard */; };
 		078C828424D556B2000B8E39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 078C828324D556B2000B8E39 /* Assets.xcassets */; };
 		078C828B24D556B3000B8E39 /* MyWatchCanvas WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 078C828A24D556B3000B8E39 /* MyWatchCanvas WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		078C829024D556B3000B8E39 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078C828F24D556B3000B8E39 /* InterfaceController.swift */; };
 		078C829224D556B3000B8E39 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078C829124D556B3000B8E39 /* ExtensionDelegate.swift */; };
 		078C829424D556B6000B8E39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 078C829324D556B6000B8E39 /* Assets.xcassets */; };
+		078C82A424D5576A000B8E39 /* UIColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078C82A324D5576A000B8E39 /* UIColorHex.swift */; };
+		078C82A624D577A0000B8E39 /* ColorPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078C82A524D577A0000B8E39 /* ColorPickerController.swift */; };
+		078C82A824D577BB000B8E39 /* PenSizePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078C82A724D577BB000B8E39 /* PenSizePickerController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +54,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				078C827C24D556AA000B8E39 /* MyWatchCanvas WatchKit App.app in Embed Watch Content */,
+				078C827C24D556AA000B8E39 /* Sketch My Wrist.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,8 +62,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		078C827724D556AA000B8E39 /* MyWatchCanvas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWatchCanvas.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		078C827B24D556AA000B8E39 /* MyWatchCanvas WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyWatchCanvas WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		078C827724D556AA000B8E39 /* Sketch My Wrist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sketch My Wrist.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		078C827B24D556AA000B8E39 /* Sketch My Wrist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sketch My Wrist.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		078C828124D556AA000B8E39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		078C828324D556B2000B8E39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		078C828524D556B2000B8E39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,6 +72,9 @@
 		078C829124D556B3000B8E39 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		078C829324D556B6000B8E39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		078C829524D556B6000B8E39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		078C82A324D5576A000B8E39 /* UIColorHex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorHex.swift; sourceTree = "<group>"; };
+		078C82A524D577A0000B8E39 /* ColorPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerController.swift; sourceTree = "<group>"; };
+		078C82A724D577BB000B8E39 /* PenSizePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenSizePickerController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +100,8 @@
 		078C827824D556AA000B8E39 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				078C827724D556AA000B8E39 /* MyWatchCanvas.app */,
-				078C827B24D556AA000B8E39 /* MyWatchCanvas WatchKit App.app */,
+				078C827724D556AA000B8E39 /* Sketch My Wrist.app */,
+				078C827B24D556AA000B8E39 /* Sketch My Wrist.app */,
 				078C828A24D556B3000B8E39 /* MyWatchCanvas WatchKit Extension.appex */,
 			);
 			name = Products;
@@ -116,6 +122,9 @@
 			children = (
 				078C828F24D556B3000B8E39 /* InterfaceController.swift */,
 				078C829124D556B3000B8E39 /* ExtensionDelegate.swift */,
+				078C82A324D5576A000B8E39 /* UIColorHex.swift */,
+				078C82A524D577A0000B8E39 /* ColorPickerController.swift */,
+				078C82A724D577BB000B8E39 /* PenSizePickerController.swift */,
 				078C829324D556B6000B8E39 /* Assets.xcassets */,
 				078C829524D556B6000B8E39 /* Info.plist */,
 			);
@@ -139,7 +148,7 @@
 			);
 			name = MyWatchCanvas;
 			productName = MyWatchCanvas;
-			productReference = 078C827724D556AA000B8E39 /* MyWatchCanvas.app */;
+			productReference = 078C827724D556AA000B8E39 /* Sketch My Wrist.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
 		};
 		078C827A24D556AA000B8E39 /* MyWatchCanvas WatchKit App */ = {
@@ -156,7 +165,7 @@
 			);
 			name = "MyWatchCanvas WatchKit App";
 			productName = "MyWatchCanvas WatchKit App";
-			productReference = 078C827B24D556AA000B8E39 /* MyWatchCanvas WatchKit App.app */;
+			productReference = 078C827B24D556AA000B8E39 /* Sketch My Wrist.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
 		078C828924D556B3000B8E39 /* MyWatchCanvas WatchKit Extension */ = {
@@ -249,6 +258,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				078C82A424D5576A000B8E39 /* UIColorHex.swift in Sources */,
+				078C82A624D577A0000B8E39 /* ColorPickerController.swift in Sources */,
+				078C82A824D577BB000B8E39 /* PenSizePickerController.swift in Sources */,
 				078C829224D556B3000B8E39 /* ExtensionDelegate.swift in Sources */,
 				078C829024D556B3000B8E39 /* InterfaceController.swift in Sources */,
 			);
@@ -406,7 +418,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.MyWatchCanvas.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
+				PRODUCT_NAME = "MyWatchCanvas WatchKit Extension";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -428,7 +440,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.MyWatchCanvas.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
+				PRODUCT_NAME = "MyWatchCanvas WatchKit Extension";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -447,7 +459,7 @@
 				IBSC_MODULE = MyWatchCanvas_WatchKit_Extension;
 				INFOPLIST_FILE = "MyWatchCanvas WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.MyWatchCanvas.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Sketch My Wrist";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -466,7 +478,7 @@
 				IBSC_MODULE = MyWatchCanvas_WatchKit_Extension;
 				INFOPLIST_FILE = "MyWatchCanvas WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.MyWatchCanvas.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Sketch My Wrist";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -483,7 +495,7 @@
 				DEVELOPMENT_TEAM = 542W8Z2VM3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.MyWatchCanvas;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Sketch My Wrist";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -496,7 +508,7 @@
 				DEVELOPMENT_TEAM = 542W8Z2VM3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.MyWatchCanvas;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Sketch My Wrist";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

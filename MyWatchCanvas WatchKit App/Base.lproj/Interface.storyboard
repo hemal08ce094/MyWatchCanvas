@@ -1,15 +1,88 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16097" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch40"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="MyWatchCanvas_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="175" height="175" alignment="center" verticalAlignment="center" layout="overlap" id="VdT-Fe-r9k">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" text="Draw here" id="v8l-sq-lPL"/>
+                            </items>
+                            <gestureRecognizers>
+                                <panGestureRecognizer id="yUz-al-8ml">
+                                    <connections>
+                                        <action selector="panRecognized:" destination="AgC-eL-Hgc" id="eyo-Rx-y4A"/>
+                                    </connections>
+                                </panGestureRecognizer>
+                            </gestureRecognizers>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                        </group>
+                    </items>
+                    <menu key="menu" id="8fh-ZN-FyO">
+                        <items>
+                            <menuItem title="Color Change" icon="shuffle" id="wc5-7h-Wlk">
+                                <connections>
+                                    <action selector="changeColorPressed" destination="AgC-eL-Hgc" id="z5p-AE-vbQ"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Pen Size" icon="more" id="pXO-zx-XLb">
+                                <connections>
+                                    <action selector="changePenSizePressed" destination="AgC-eL-Hgc" id="kON-iP-n1Q"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Reset canvas" icon="trash" id="Eic-QZ-Vvh">
+                                <connections>
+                                    <action selector="resetButtonPressed" destination="AgC-eL-Hgc" id="KQq-a8-y6d"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="canvasGroup" destination="VdT-Fe-r9k" id="ugS-EK-vaN"/>
+                        <outlet property="instructionLabel" destination="v8l-sq-lPL" id="Wtz-hY-qHF"/>
+                    </connections>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="78" y="159.5"/>
+        </scene>
+        <!--Select Color-->
+        <scene sceneID="iN1-jk-lbD">
+            <objects>
+                <controller identifier="ColorPickerController" title="Select Color" id="Lfr-93-VUt" customClass="ColorPickerController" customModule="MyWatchCanvas_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <picker height="169" alignment="left" id="GnM-ym-GnM">
+                            <connections>
+                                <action selector="pickerSelected:" destination="Lfr-93-VUt" id="qac-Lk-K7i"/>
+                            </connections>
+                        </picker>
+                    </items>
+                    <connections>
+                        <outlet property="colorPicker" destination="GnM-ym-GnM" id="LrE-5p-hpu"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-77" y="451"/>
+        </scene>
+        <!--Select Pen Size -->
+        <scene sceneID="BHF-QM-m73">
+            <objects>
+                <controller identifier="PenSizePickerController" title="Select Pen Size " id="tsw-D7-vVW" customClass="PenSizePickerController" customModule="MyWatchCanvas_WatchKit_Extension">
+                    <items>
+                        <picker height="154" alignment="center" verticalAlignment="center" id="Saz-yP-W5L"/>
+                    </items>
+                    <connections>
+                        <outlet property="penSizePicker" destination="Saz-yP-W5L" id="QPw-eH-ljw"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="133.4814814814815" y="450.88832487309639"/>
         </scene>
     </scenes>
 </document>
