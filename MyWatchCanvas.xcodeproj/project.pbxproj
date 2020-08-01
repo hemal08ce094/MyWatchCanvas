@@ -17,6 +17,8 @@
 		078C82A424D5576A000B8E39 /* UIColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078C82A324D5576A000B8E39 /* UIColorHex.swift */; };
 		078C82A624D577A0000B8E39 /* ColorPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078C82A524D577A0000B8E39 /* ColorPickerController.swift */; };
 		078C82A824D577BB000B8E39 /* PenSizePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078C82A724D577BB000B8E39 /* PenSizePickerController.swift */; };
+		078C82AA24D582C8000B8E39 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078C82A924D582C8000B8E39 /* ColorManager.swift */; };
+		078C82AC24D58698000B8E39 /* CrownSelectorInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078C82AB24D58698000B8E39 /* CrownSelectorInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		078C82A324D5576A000B8E39 /* UIColorHex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorHex.swift; sourceTree = "<group>"; };
 		078C82A524D577A0000B8E39 /* ColorPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerController.swift; sourceTree = "<group>"; };
 		078C82A724D577BB000B8E39 /* PenSizePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenSizePickerController.swift; sourceTree = "<group>"; };
+		078C82A924D582C8000B8E39 /* ColorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
+		078C82AB24D58698000B8E39 /* CrownSelectorInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrownSelectorInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,8 @@
 				078C82A324D5576A000B8E39 /* UIColorHex.swift */,
 				078C82A524D577A0000B8E39 /* ColorPickerController.swift */,
 				078C82A724D577BB000B8E39 /* PenSizePickerController.swift */,
+				078C82AB24D58698000B8E39 /* CrownSelectorInterfaceController.swift */,
+				078C82A924D582C8000B8E39 /* ColorManager.swift */,
 				078C829324D556B6000B8E39 /* Assets.xcassets */,
 				078C829524D556B6000B8E39 /* Info.plist */,
 			);
@@ -261,6 +267,8 @@
 				078C82A424D5576A000B8E39 /* UIColorHex.swift in Sources */,
 				078C82A624D577A0000B8E39 /* ColorPickerController.swift in Sources */,
 				078C82A824D577BB000B8E39 /* PenSizePickerController.swift in Sources */,
+				078C82AC24D58698000B8E39 /* CrownSelectorInterfaceController.swift in Sources */,
+				078C82AA24D582C8000B8E39 /* ColorManager.swift in Sources */,
 				078C829224D556B3000B8E39 /* ExtensionDelegate.swift in Sources */,
 				078C829024D556B3000B8E39 /* InterfaceController.swift in Sources */,
 			);

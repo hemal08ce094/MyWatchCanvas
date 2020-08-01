@@ -15,15 +15,13 @@ class ColorPickerController: WKInterfaceController {
     
     lazy var itemArray: [WKPickerItem] = {
         var its = [WKPickerItem]()
-        let titles = ["①", "②", "③", "④", "⑤", "⑥", "⑦", "⑧", "⑨", "⑩"]
-        let captions = ["① is one", "② is two", "③ is three", "④ is four", "⑤ is five"]
+        let titles = ["darkGray", "lightGray", "white", "gray", "red", "green", "blue", "cyan", "yellow", "magenta", "orange", "purple", "brown"]
         
-        for i in 0...9 {
+        for i in 0...12 {
             let item = WKPickerItem()
-            item.title = titles[i]
+//            item.title = titles[i]
             let string = "item_type_\(i + 1)"
-            item.accessoryImage = WKImage(imageName: string)
-            item.contentImage = WKImage(imageName: string)
+            item.contentImage = WKImage(image: stringToImage(titles[i], color: ColorManager.defaultManager.availableColors[i]) ?? UIImage())
             its.append(item)
         }
         return its
@@ -34,11 +32,35 @@ class ColorPickerController: WKInterfaceController {
         super.awake(withContext: context)
         
         colorPicker.setItems(itemArray)
-        
+//        colorPicker.setim
         colorPicker.focus()
     }
     
     @IBAction func pickerSelected(_ value: Int) {
-        print(itemArray[value].title!)
+//        print(itemArray[value].title!)
+        
+        let userDefaults = UserDefaults.standard
+         userDefaults.set(value, forKey: KEY_SELF_Color)
+         userDefaults.synchronize()
+    }
+    
+    // MARK: Helper Functions
+    private func stringToImage(_ str: String, color: UIColor) -> UIImage? {
+      let imageSize = CGSize(width: 120, height: 20)
+      UIGraphicsBeginImageContextWithOptions(imageSize, false, 0)
+      UIColor.clear.set()
+      let rect = CGRect(origin: CGPoint.zero, size: imageSize)
+      UIRectFill(rect)
+     
+      let style = NSMutableParagraphStyle()
+      style.alignment = .center
+      (str as NSString).draw(in: rect, withAttributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 13),
+                                                        NSAttributedString.Key.paragraphStyle: style,
+                                                        NSAttributedString.Key.foregroundColor: color,
+                                                        NSAttributedString.Key.baselineOffset: -3.0])
+      
+      let image = UIGraphicsGetImageFromCurrentImageContext()
+      UIGraphicsEndImageContext()
+      return image
     }
 }

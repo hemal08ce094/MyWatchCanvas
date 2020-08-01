@@ -40,5 +40,8 @@ class PenSizePickerController: WKInterfaceController {
     
     @IBAction func pickerSelected(_ value: Int) {
         print(itemArray[value].title!)
+        let userDefaults = UserDefaults.standard
+        userDefaults.set(value, forKey: KEY_SELF_PenSize)
+        userDefaults.synchronize()
     }
 }

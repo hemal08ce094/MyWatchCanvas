@@ -12,6 +12,10 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
+        let userDefaults = UserDefaults.standard
+        userDefaults.set(1, forKey: KEY_SELF_PenSize)
+        userDefaults.set(1, forKey: KEY_SELF_Color)
+        userDefaults.synchronize()
     }
 
     func applicationDidBecomeActive() {

@@ -9,6 +9,8 @@
 import WatchKit
 import Foundation
 
+let KEY_SELF_Color = "max"
+let KEY_SELF_PenSize = "last"
 
 class InterfaceController: WKInterfaceController {
     
@@ -55,13 +57,19 @@ class InterfaceController: WKInterfaceController {
         let mid2 = midPoint(b, a)
         let mid1 = midPoint(c, b)
         
+        let userDefaults = UserDefaults.standard
+
+        let selectedColor = userDefaults.integer(forKey: KEY_SELF_Color)
+        let penSize = userDefaults.float(forKey: KEY_SELF_PenSize)
+
         UIGraphicsBeginImageContextWithOptions(rect.size, true, 0) // opaque for performance
         savedImage?.draw(in: rect) // paste the previous rendering
         let linePath = UIBezierPath()
         linePath.move(to: mid2)
         linePath.addQuadCurve(to: mid1, controlPoint: b)
-        penColorHistory.first?.withAlphaComponent(alphaComponent).setStroke()
-        linePath.lineWidth = penWidth
+        ColorManager.defaultManager.availableColors[selectedColor].setStroke()
+        
+        linePath.lineWidth = CGFloat(penSize)
         linePath.lineCapStyle = .round
         linePath.stroke()
         let image = UIGraphicsGetImageFromCurrentImageContext()!
