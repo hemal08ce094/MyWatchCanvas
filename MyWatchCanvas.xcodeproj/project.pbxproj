@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		078C827C24D556AA000B8E39 /* MyWatchCanvas WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 078C827B24D556AA000B8E39 /* MyWatchCanvas WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		078C828224D556AA000B8E39 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 078C828024D556AA000B8E39 /* Interface.storyboard */; };
+		078C828424D556B2000B8E39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 078C828324D556B2000B8E39 /* Assets.xcassets */; };
+		078C828B24D556B3000B8E39 /* MyWatchCanvas WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 078C828A24D556B3000B8E39 /* MyWatchCanvas WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		078C829024D556B3000B8E39 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078C828F24D556B3000B8E39 /* InterfaceController.swift */; };
+		078C829224D556B3000B8E39 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078C829124D556B3000B8E39 /* ExtensionDelegate.swift */; };
+		078C829424D556B6000B8E39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 078C829324D556B6000B8E39 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		078C827D24D556AA000B8E39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 078C827124D556AA000B8E39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 078C827A24D556AA000B8E39;
+			remoteInfo = "MyWatchCanvas WatchKit App";
+		};
+		078C828C24D556B3000B8E39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 078C827124D556AA000B8E39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 078C828924D556B3000B8E39;
+			remoteInfo = "MyWatchCanvas WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		078C829B24D556B6000B8E39 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				078C828B24D556B3000B8E39 /* MyWatchCanvas WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		078C829F24D556B6000B8E39 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				078C827C24D556AA000B8E39 /* MyWatchCanvas WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		078C827724D556AA000B8E39 /* MyWatchCanvas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWatchCanvas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		078C827B24D556AA000B8E39 /* MyWatchCanvas WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyWatchCanvas WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		078C828124D556AA000B8E39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		078C828324D556B2000B8E39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		078C828524D556B2000B8E39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		078C828A24D556B3000B8E39 /* MyWatchCanvas WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MyWatchCanvas WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		078C828F24D556B3000B8E39 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		078C829124D556B3000B8E39 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		078C829324D556B6000B8E39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		078C829524D556B6000B8E39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		078C828724D556B3000B8E39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		078C827024D556AA000B8E39 = {
+			isa = PBXGroup;
+			children = (
+				078C827F24D556AA000B8E39 /* MyWatchCanvas WatchKit App */,
+				078C828E24D556B3000B8E39 /* MyWatchCanvas WatchKit Extension */,
+				078C827824D556AA000B8E39 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		078C827824D556AA000B8E39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				078C827724D556AA000B8E39 /* MyWatchCanvas.app */,
+				078C827B24D556AA000B8E39 /* MyWatchCanvas WatchKit App.app */,
+				078C828A24D556B3000B8E39 /* MyWatchCanvas WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		078C827F24D556AA000B8E39 /* MyWatchCanvas WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				078C828024D556AA000B8E39 /* Interface.storyboard */,
+				078C828324D556B2000B8E39 /* Assets.xcassets */,
+				078C828524D556B2000B8E39 /* Info.plist */,
+			);
+			path = "MyWatchCanvas WatchKit App";
+			sourceTree = "<group>";
+		};
+		078C828E24D556B3000B8E39 /* MyWatchCanvas WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				078C828F24D556B3000B8E39 /* InterfaceController.swift */,
+				078C829124D556B3000B8E39 /* ExtensionDelegate.swift */,
+				078C829324D556B6000B8E39 /* Assets.xcassets */,
+				078C829524D556B6000B8E39 /* Info.plist */,
+			);
+			path = "MyWatchCanvas WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		078C827624D556AA000B8E39 /* MyWatchCanvas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 078C82A024D556B6000B8E39 /* Build configuration list for PBXNativeTarget "MyWatchCanvas" */;
+			buildPhases = (
+				078C827524D556AA000B8E39 /* Resources */,
+				078C829F24D556B6000B8E39 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				078C827E24D556AA000B8E39 /* PBXTargetDependency */,
+			);
+			name = MyWatchCanvas;
+			productName = MyWatchCanvas;
+			productReference = 078C827724D556AA000B8E39 /* MyWatchCanvas.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		078C827A24D556AA000B8E39 /* MyWatchCanvas WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 078C829C24D556B6000B8E39 /* Build configuration list for PBXNativeTarget "MyWatchCanvas WatchKit App" */;
+			buildPhases = (
+				078C827924D556AA000B8E39 /* Resources */,
+				078C829B24D556B6000B8E39 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				078C828D24D556B3000B8E39 /* PBXTargetDependency */,
+			);
+			name = "MyWatchCanvas WatchKit App";
+			productName = "MyWatchCanvas WatchKit App";
+			productReference = 078C827B24D556AA000B8E39 /* MyWatchCanvas WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		078C828924D556B3000B8E39 /* MyWatchCanvas WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 078C829824D556B6000B8E39 /* Build configuration list for PBXNativeTarget "MyWatchCanvas WatchKit Extension" */;
+			buildPhases = (
+				078C828624D556B3000B8E39 /* Sources */,
+				078C828724D556B3000B8E39 /* Frameworks */,
+				078C828824D556B3000B8E39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MyWatchCanvas WatchKit Extension";
+			productName = "MyWatchCanvas WatchKit Extension";
+			productReference = 078C828A24D556B3000B8E39 /* MyWatchCanvas WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		078C827124D556AA000B8E39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = Hemal;
+				TargetAttributes = {
+					078C827624D556AA000B8E39 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					078C827A24D556AA000B8E39 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					078C828924D556B3000B8E39 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 078C827424D556AA000B8E39 /* Build configuration list for PBXProject "MyWatchCanvas" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 078C827024D556AA000B8E39;
+			productRefGroup = 078C827824D556AA000B8E39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				078C827624D556AA000B8E39 /* MyWatchCanvas */,
+				078C827A24D556AA000B8E39 /* MyWatchCanvas WatchKit App */,
+				078C828924D556B3000B8E39 /* MyWatchCanvas WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		078C827524D556AA000B8E39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		078C827924D556AA000B8E39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				078C828424D556B2000B8E39 /* Assets.xcassets in Resources */,
+				078C828224D556AA000B8E39 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		078C828824D556B3000B8E39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				078C829424D556B6000B8E39 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		078C828624D556B3000B8E39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				078C829224D556B3000B8E39 /* ExtensionDelegate.swift in Sources */,
+				078C829024D556B3000B8E39 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		078C827E24D556AA000B8E39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 078C827A24D556AA000B8E39 /* MyWatchCanvas WatchKit App */;
+			targetProxy = 078C827D24D556AA000B8E39 /* PBXContainerItemProxy */;
+		};
+		078C828D24D556B3000B8E39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 078C828924D556B3000B8E39 /* MyWatchCanvas WatchKit Extension */;
+			targetProxy = 078C828C24D556B3000B8E39 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		078C828024D556AA000B8E39 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				078C828124D556AA000B8E39 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		078C829624D556B6000B8E39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		078C829724D556B6000B8E39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		078C829924D556B6000B8E39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 542W8Z2VM3;
+				INFOPLIST_FILE = "MyWatchCanvas WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.MyWatchCanvas.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		078C829A24D556B6000B8E39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 542W8Z2VM3;
+				INFOPLIST_FILE = "MyWatchCanvas WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.MyWatchCanvas.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		078C829D24D556B6000B8E39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 542W8Z2VM3;
+				IBSC_MODULE = MyWatchCanvas_WatchKit_Extension;
+				INFOPLIST_FILE = "MyWatchCanvas WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.MyWatchCanvas.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		078C829E24D556B6000B8E39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 542W8Z2VM3;
+				IBSC_MODULE = MyWatchCanvas_WatchKit_Extension;
+				INFOPLIST_FILE = "MyWatchCanvas WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.MyWatchCanvas.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		078C82A124D556B6000B8E39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 542W8Z2VM3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.MyWatchCanvas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		078C82A224D556B6000B8E39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 542W8Z2VM3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hemalM.MyWatchCanvas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		078C827424D556AA000B8E39 /* Build configuration list for PBXProject "MyWatchCanvas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				078C829624D556B6000B8E39 /* Debug */,
+				078C829724D556B6000B8E39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		078C829824D556B6000B8E39 /* Build configuration list for PBXNativeTarget "MyWatchCanvas WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				078C829924D556B6000B8E39 /* Debug */,
+				078C829A24D556B6000B8E39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		078C829C24D556B6000B8E39 /* Build configuration list for PBXNativeTarget "MyWatchCanvas WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				078C829D24D556B6000B8E39 /* Debug */,
+				078C829E24D556B6000B8E39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		078C82A024D556B6000B8E39 /* Build configuration list for PBXNativeTarget "MyWatchCanvas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				078C82A124D556B6000B8E39 /* Debug */,
+				078C82A224D556B6000B8E39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 078C827124D556AA000B8E39 /* Project object */;
+}
